@@ -43,3 +43,6 @@
 
 
 -- YOUR CODE HERE
+SELECT COALESCE(
+  (SELECT MAX(list_order + 1) FROM instructions), 1
+);
